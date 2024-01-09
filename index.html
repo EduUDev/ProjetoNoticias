@@ -1,11 +1,458 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento do DUDU</title>
+    <title>Global NEWS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+    <div class="row"> <!-- INICIO NAVBAR-->
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg bg-body bg-dark" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-danger" href="index.html">GlobalNews</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="categoria.html">CATEGORIAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="contato.html">CONTATO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="galeria-fotos.html">GALERIA DE FOTOS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- FIM NAVBAR-->
+
+    <div class="row"> <!-- INICIO CARROSEL-->
+        <div class="col-12">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="images/temperatura.jpg" class="d-block w-100" alt="..." height="350">
+                        <div class="carousel-caption d-none d-md-block text-white">
+                            <h5>Ondas de calor serão mais comuns?</h5>
+                            <p>Especialistas explicam fenômenos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="images/trump.jpg" class="d-block w-100" alt="..." height="350">
+                        <div class="carousel-caption d-none d-md-block text-white">
+                            <h5>Donald Trump</h5>
+                            <p>Juiz de Nova York considera ex-presidente responsável por fraude.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="images/pombo.jpg" class="d-block w-100" alt="..." height="350">
+                        <div class="carousel-caption d-none d-md-block text-white">
+                            <h5>Está morando sózinho</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div><br> <!--FIM CARROSEL-->
+
+    <div class="row"> <!--INICIO GRID DE NOTICIAS-->
+        <div class="col-3 ms-3 my-2">
+            <a class="link-offset-2 link-underline link-underline-opacity-0" href="financeiro.html">
+                <div class="card h-auto">
+                    <img src="images/dolar.jpg" class="card-img-top" alt="Muitas notas de dólar espalhadas">
+                    <div class="card-body">
+                        <h5 class="card-title">Mercado financeiro</h5>
+                        <p class="card-text">Dólar volta a fechar acima de R$ 5.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Há 35 minutos - em Economia</small>
+                    </div>
+                </div>
+            </a>
+            <a class="link-offset-2 link-underline link-underline-opacity-0" href="temporal.html">
+                <div class="card mt-1">
+                    <img src="images/guaiba.jpg" class="card-img-top" alt="Foto do alagamento em Guaíba-RS">
+                    <div class="card-body">
+                        <h5 class="card-title">Temporal em Porto Alegre</h5>
+                        <p class="card-text">Guaíba atinge maior nível desde 1941, e água ultrapassa comportas
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Há 1 hora - em Clima</small>
+                    </div>
+                </div>
+            </a>
+            <a class="link-offset-2 link-underline link-underline-opacity-0" href="chatGPT.html">
+                <div class="card mt-1">
+                    <img src="images/chatGPT.jpg" class="card-img-top"
+                        alt="ChatGPT sendo acessado na tela de um notebook">
+                    <div class="card-body">
+                        <h5 class="card-title">Tecnologia</h5>
+                        <p class="card-text">ChatGPT agora pode acessar a internet para dar informações atuais
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Há 2 horas - em Tecnologia</small>
+                    </div>
+                </div>
+            </a>
+            <a class="link-offset-2 link-underline link-underline-opacity-0" href="decisaoUnanime.html">
+                <div class="card mt-1">
+                    <img src="images/prisao.jpg" class="card-img-top"
+                        alt="Inúmeros detentos fazendo o uso de uma única cela.">
+                    <div class="card-body">
+                        <h5 class="card-title">Decisão unânime</h5>
+                        <p class="card-text">STF manda governos elaborarem plano para melhorar sistema prisional.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Há 22 minutos - em Segurança</small>
+                    </div>
+                </div>
+            </a>
+            <a class="link-offset-2 link-underline link-underline-opacity-0" href="noPodio.html">
+                <div class="card mt-1">
+                    <img src="images/brasilGinastica.jpg" class="card-img-top"
+                        alt="Seleção Brasileira Feminina de Ginástica no pódio com medalhas.">
+                    <div class="card-body">
+                        <h5 class="card-title">No pódio!</h5>
+                        <p class="card-text">Brasil conquista prata inédita por equipes no Mundial de ginástica.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Há 25 minutos - em Esportes</small>
+                    </div>
+                </div>
+            </a>
+            <a class="link-offset-2 link-underline link-underline-opacity-0" href="astronomia.html">
+                <div class="card mt-1">
+                    <img src="images/astronomia.jpg" class="card-img-top"
+                        alt="Espaço nave voando rumo ao espaço">
+                    <div class="card-body">
+                        <h5 class="card-title">Astronomia</h5>
+                        <p class="card-text">SpaceX lança Starship, foguete mais poderoso do mundo, mas perde contato
+                            com a nave.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Há 52 minutos - em Tecnologia</small>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-6 mt-2">
+            <div class="card-group">
+                <div class="card">
+                    <img src="images/heineken2.png" class="card-img-top" alt="Heineken">
+                    <div class="card-body">
+                        <h5 class="card-title">Heineken no The Town</h5>
+                        <p class="card-text">Na primeira edição do The Town, que se encerra neste domingo, 10, a
+                            Heineken promoveu a versão sem álcool de sua tradicional cerveja pela primeira vez em
+                            todos
+                            os pontos de venda em um festival. Para garantir que o público tenha a melhor experiência, o
+                            grupo traz uma novidade: além de chope Heineken, o festival contará com o chope Lagunitas,
+                            IPA da Califórnia.</p>
+                        <p class="card-text"><small class="text-body-secondary">Atualizado a 22 horas.</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/TedGlobal.jpg" class="card-img-top" alt="Evento de Ted Global">
+                    <div class="card-body">
+                        <h5 class="card-title">TED Global</h5><br>
+                        <p class="card-text">Todos os anos, o TED organiza conferências para reunir um grupo de
+                            pensadores e realizadores especialistas em uma ampla variedade de campos para ajudar a
+                            compartilhar novas ideias. O acrônimo TED vem de Technology, Entertainment and Design. Ou
+                            seja, ele personifica o que há de mais relevante nessas áreas.
+                        </p><br>
+                        <p class="card-text"><small class="text-body-secondary">Atualizado a 22 horas.</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/oktoberfest.jpg" class="card-img-top" alt="Evento da Oktoberfest na Alemanha">
+                    <div class="card-body">
+                        <h5 class="card-title">Oktoberfest Munique 2023</h5>
+                        <p class="card-text">Em 2023 a Oktoberfest acontecerá do dia 16 de Setembro até 3 de
+                            Outubro. A
+                            festa conta com 17 grandes tendas das cervejarias de Munique. Além disso ainda há pela
+                            festa
+                            21 pequenas tendas/quiosques com comida típica, bebidas alternativas e doces típicos da
+                            região.</p><br><br><br>
+                        <p class="card-text"><small class="text-body-secondary">Atualizado a 22 horas.</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group mt-4">
+                <div class="card">
+                    <img src="images/nyc-fashion-week (1).jpg" class="card-img-top" alt="Heineken">
+                    <div class="card-body">
+                        <h5 class="card-title">New York Fashion Week</h5>
+                        <p class="card-text">A semana de moda de Nova York, mais conhecida como New York Fashion Week,
+                            foi o primeiro evento de moda a tomar proporções internacionais. Organizado em duas edições
+                            anuais, o evento apresenta as principais tendências para as coleções Primavera/Verão e
+                            Outono/Inverno de 100 dos maiores estilistas, grifes e designers da indústria da moda.</p>
+                        <br><br><br><br>
+                        <p class="card-text"><small class="text-body-secondary">Atualizado a 22 horas.</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/rap-in-cena.jpg" class="card-img-top" alt="Palco do evento Rap In Cena">
+                    <div class="card-body">
+                        <h5 class="card-title">Rap In Cena<br>2023</h5>
+                        <p class="card-text">Rap In Cena reúne mais de 70 artistas do hip-hop em Porto Alegre.
+                            A 9ª edição do festival conta com atrações como Djonga, L7nnon, Orochi, Veigh, Racionais
+                            MC´s,
+                            BK, Negra Li, MC Cabelinho, MC Hariel e muito mais.
+                            O evento reúne mais de 70 atrações nacionais, três palcos, batalha de rima, pista de skate,
+                            grafite ao vivo e breaking dance.
+                            O Rap In Cena acontece neste sábado (28) e domingo (29), a partir das 10h, no Parque
+                            Maurício Sirotsky Sobrinho, em POA</p>
+                        <p class="card-text"><small class="text-body-secondary">Atualizado a 22 horas.</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/event-ces-2023.jpg" class="card-img-top" alt="Evento da Oktoberfest na Alemanha">
+                    <div class="card-body">
+                        <h5 class="card-title">International CES 2023</h5>
+                        <p class="card-text">Em 2023 a Consumer Eletronics Show acontecerá nos dias 5, 6, 7 e 8 de
+                            Janeiro. A cidade de Las Vegas é o palco do maior encontro entre representantes do comércio
+                            de tecnologia mundial. A feira apresenta, em 4 dias de conferência, as principais novidades
+                            e
+                            tendências em equipamentos eletrônicos. O evento acontece anualmente e reúne um público
+                            apaixonado por inovação.
+                        </p><br><br><br>
+                        <p class="card-text"><small class="text-body-secondary">Atualizado a 22 horas.</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group mt-4 mb-3 h-25">
+                <div class="card">
+                    <img src="images/codleague.jpg" class="card-img-top" alt="COD League 23">
+                    <div class="card-body">
+                        <h5 class="card-title">Call Of Duty</h5>
+                        <p class="card-text">COD League 2024 apresentada oficialmente. A nova temporada da COD League
+                            está à
+                            porta com novidades e competição inaugural agendada para o dia 8 de dezembro! Com a New York
+                            Subliners
+                            como campeã em título, a principal prova do calendário de Call of Duty regressa dentro de
+                            cinco semanas com
+                            quatro Majors na sua agenda.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col mt-2"> <!--INICIO ANUNCIOS GOVERNAMENTAIS-->
+            <a class="link-opacity-10 text-decoration-none"
+                href="https://bvsms.saude.gov.br/vacina-e-vida-vacina-e-para-todos-ministerio-da-saude-lanca-movimento-nacional-pela-vacinacao/">
+                <div class="card me-3">
+                    <img src="images/vacina.jpg" class="card-img-top"
+                        alt="Ministério da Saúde lança Movimento Nacional pela Vacinação">
+                    <div class="card-body">
+                        <h5 class="card-title">Ministério da Saúde adverte:</h5>
+                        <p class="card-text">“Vacina é vida. Vacina é para todos”: Ministério da Saúde lança Movimento
+                            Nacional pela Vacinação</p>
+                    </div>
+                </div>
+            </a>
+            <a class="link-opacity-10 text-decoration-none"
+                href="https://estado.rs.gov.br/secretaria-do-esporte-e-lazer-promove-encontro-de-capacitacao-do-pro-esporte-rs">
+                <div class="card me-3 mt-3">
+                    <img src="images/esporteElazerRS.jpg" class="card-img-top" alt="Esporte e Lazer RS.">
+                    <div class="card-body">
+                        <h5 class="card-title">Rio Grande do Sul:</h5>
+                        <p class="card-text">Secretaria do Esporte e Lazer promove Encontro de Capacitação do
+                            Pró-Esporte RS.
+                            O evento tem início às 14h, no auditório do Centro Administrativo Fernando Ferrari (Caff),
+                            em Porto Alegre.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a class="link-opacity-10 text-decoration-none"
+                href="https://www.gov.br/mj/pt-br/assuntos/noticias/ministerio-da-justica-e-tjdft-se-unem-para-a-formacao-de-liderancas-comunitarias">
+                <div class="card me-3 mt-3">
+                    <img src="images/liderancascomunitarias.jpeg" class="card-img-top"
+                        alt="Imagem de mãos de pessoas di diferentes cores, juntas, pela igualdade.">
+                    <div class="card-body">
+                        <h5 class="card-title">Ministério da Justiça e Segurança Pública:</h5>
+                        <p class="card-text">Ministério da Justiça e TJDFT se unem para a formação de lideranças
+                            comunitárias.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a class="link-opacity-10 text-decoration-none"
+                href="https://www.gov.br/mec/pt-br/assuntos/noticias/2023/novembro/educacao-basica-e-tema-de-seminario-internacional">
+                <div class="card me-3 mt-3">
+                    <img src="images/EducacaoBasica.jpg" class="card-img-top" alt="Semiário sobre Educação Básica.">
+                    <div class="card-body">
+                        <h5 class="card-title">Educação básica é tema de seminário internacional:</h5>
+                        <p class="card-text">Evento segue até a próxima quinta-feira (30) e reúne especialistas para
+                            promover debate sobre futuro das avaliações brasileiras
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a class="link-opacity-10 text-decoration-none"
+                href="https://www.gov.br/esporte/pt-br/noticias-e-conteudos/esporte/ministerio-abre-prazo-para-apresentacao-de-projetos-da-lei-de-incentivo-ao-esporte">
+                <div class="card me-3 mt-3 mb-3">
+                    <img src="images/AtletasBarreira.jpg" class="card-img-top"
+                        alt="Atletas de salto em barreiras treinando.">
+                    <div class="card-body">
+                        <h5 class="card-title">Lei de incentivo:</h5>
+                        <p class="card-text">Ministério abre prazo para apresentação de projetos da Lei de Incentivo ao
+                            Esporte.
+                            A documentação para cadastramento de projetos deve ser enviada até dia 15 de setembro de
+                            2024.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div> <!--FIM ANUNCIOS GOVERNAMENTAIS-->
+    </div> <!--FIM GRID DE NOTICIAS-->
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-primary p-4">
+            <div class="row">
+                <div class="col-4"> <!--COLUNA PRINCIPAL FOOTER-->
+                    <h6>Global News.</h6>
+                    <h7>Você por dentro do mundo.</h7><br>
+                    <p>______________________________________</p>
+                    <h7>GLOBAL NEWS NAS REDES</h7>
+                    <div class="logos">
+                        <a class="text-decoration-none text-light" href="https://www.instagram.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </a>
+                        <a class="text-decoration-none text-light ps-md-5" href="https://twitter.com/?lang=pt-br">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                            </svg>
+                        </a>
+                        <a class="text-decoration-none text-light ps-md-5"
+                            href="https://www.facebook.com/?locale=pt_BR">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg>
+                        </a>
+                        <a class="text-decoration-none text-light ps-md-5" href="https://www.linkedin.com/home">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p>______________________________________</p>
+                    <h6>MAIS</h6>
+                    <div class="row">
+                        <h7>Equipe Global News Brasil</h7>
+                        <h7>Fórum GN</h7>
+                        <h7>Newsletter</h7>
+                    </div>
+                </div> <!--FIM COLUNA PRINCIPAL-->
+
+
+                <div class="col-4"> <!--COLUNA LINKS PARA TOPICOS-->
+                    <h5 class="mb-2">Explorar Categorias.</h5>
+
+                    <a href="economia.html"
+                        class="mb-2 link-light link-underline-opacity-25 link-underline-opacity-75-hover">
+                        <h7>Economia</h7>
+                    </a><br>
+                    <a href="segurança.html"
+                        class="mb-2 link-light link-underline-opacity-25 link-underline-opacity-75-hover">
+                        <h7>Segurança</h7>
+                    </a><br>
+                    <a href="tecnologia.html"
+                        class="mb-2 link-light link-underline-opacity-25 link-underline-opacity-75-hover">
+                        <h7>Tecnologia</h7>
+                    </a><br>
+                    <a href="esportes.html"
+                        class="mb-2 link-light link-underline-opacity-25 link-underline-opacity-75-hover">
+                        <h7>Esportes</h7>
+                    </a><br>
+                    <a href="clima.html"
+                        class="mb-2 link-light link-underline-opacity-25 link-underline-opacity-75-hover">
+                        <h7>Clima</h7>
+                    </a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <p class="mt-4">
+                        <img src="images/copyright (1).png" height="14" width="14">
+                        2023 | Global News | Todos os direitos reservados.
+                    </p>
+
+                </div> <!--FIM COLUNA LINKS PARA TOPICOS-->
+
+                <div class="col-4"> <!--COLUNA PARA CONTATO-->
+                    <h6>Inscreva-se em nosso canal de usuários e receba notícias antecipadamente!</h6><br>
+                    <div class="col-auto">
+                        <input type="email" class="form-control" id="email" placeholder="Seu email aqui...">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-danger mb-3 mt-2">Inscrever-se</button>
+                        <p class="mt-1">____________________________________________________________</p>
+                        <p class="mt-2">Telefone: (55) 9.9695-8585</p>
+                        <p>
+                            <img src="images/globe.png" height="14" width="14">
+                            Português-BR
+                        </p>
+
+                    </div>
+
+
+                </div> <!--FIM COLUNA PARA CONTATO-->
+            </div> <!--FIM ROW FOOTER-->
+
+        </div>
+    </footer>
 </body>
+
 </html>
